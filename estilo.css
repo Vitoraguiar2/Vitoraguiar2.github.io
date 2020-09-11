@@ -1,0 +1,112 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(238, 46, 32);
+    color: white;
+    height: 40px;
+    width: 100%;
+    position: static;
+    z-index: 10;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#menu {
+    color: red; 
+    font-weight: bold; 
+    float: right;
+    list-style: none;
+    margin-top: 0px;
+}
+li{
+    float: left;
+    padding: 5 40 10 20;
+    font-size: 20px;
+}
+.escolha{
+    color: white;
+    text-decoration: none;
+}
+.escolha:hover{
+    background-color: brown;
+}
+#imagem_fundo {
+    background: url("fundo.jpg");
+    text-align: center;
+    height: 45vw;
+    background-size: cover;
+}
+#titulo {
+    padding-top: 20%;
+    font-size: 10vw;
+    line-height: 0.6;
+}
+h1{
+    margin-top: 0px;
+}
+.simb{
+    width: 125px;
+}
+.destaque{
+    background-color: #e4e1e1;
+}
+.dois{
+    width: 40%;
+}
+.tres {
+    width: 23.2%;
+    padding: 0 2%;
+}
+.center{
+    text-align: center;
+}
+.imgcent{
+    display: block;
+    margin: 0 auto;
+}
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+section{
+    padding:20;
+    float:left;
+}
+@media screen and (max-width: 800px) {
+    p{
+        width: 100%;
+    }
+    header{
+        padding: 0;
+    }
+    .tres{
+        display: block; 
+        float: left;
+        width: 100%;
+    }
+    .center{
+        text-align: left;
+    }
+    #imagem_fundo{
+        height: 80vw;
+    }
+    .imgcent{
+        width: 0%;
+        visibility: hidden;
+    }
+
+}
+@media screen and (max-width: 1300px) {
+    #menu{
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+}
